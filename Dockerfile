@@ -1,5 +1,5 @@
-FROM openjdk:19-jdk-slim
+FROM openjdk:21-jdk-slim
 WORKDIR /app
-COPY build/libs/croco_users-0.0.1-SNAPSHOT.war app.war
+COPY build/libs/InternshipAssignment-0.0.1-SNAPSHOT-plain.jar app.jar
 EXPOSE 8080
-CMD ["java", "-jar", "app.war"]
+CMD ["java", "-jar", "app.jar"]
